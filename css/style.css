@@ -1,0 +1,179 @@
+:root{
+    --mainColor : #303030;
+    --secondayColor : #403F3F;
+    --acsentColor : #FFC531;
+    --acsent2Color : #fff;
+
+
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'ubuntu','montserrat',sans-serif;
+}
+
+/* Navbar */
+.nav-link.active{
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark{
+    background-color: black !important;
+    z-index: 10; 
+}
+/* End Navbar */
+
+/* Hero */
+.color-acsent{
+    color: var(--acsentColor)
+}
+
+.color-acsent2{
+    color: var(--acsent2Color)
+}
+.color-acsent3{
+    color:var(--secondayColor)
+}
+#hero{
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+#hero h1{
+    font-size: 3rem;
+}
+
+#hero h2{
+    font-weight:300;
+    font-size: 2rem;
+}
+
+#hero p{
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+
+/* Button CTA */
+.btn-custom1{
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 36px;
+}
+
+.btn-custom1:hover{
+    box-shadow: 0 0 15px rgba(255, 166, 0, 8);
+}
+
+.cv{
+    color:var(--acsentColor);
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+.social-icon svg{
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+/* End Hero */
+
+/* About */
+
+#about hr{
+    color: var(--acsentColor);
+    height: 2px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#about{
+    min-width: 300px;
+    width: 100%;
+    background-color: var(--secondayColor);
+    color:#fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+/* End About */
+
+/* Skill */
+#skill hr{
+    color: var(--acsentColor);
+    height: 2px;
+    width: 250px;
+    margin: 0 auto;
+}
+#skill img{
+    width: 15%;
+    margin:25px;
+}
+#skill{
+    min-width: 300px;
+    width: 100%;
+    color:#fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* End Skill */
+
+/* Footer */
+.footer{
+    background-color: var(--secondayColor);
+}
+
+.picture{
+    padding-top: 200px;
+}
+.social-icon-footer svg{
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+/* End Footer */
+
+@media screen and (max-width:1200px) {
+    #hero h1{
+        font-size: 1.9rem;
+    }
+
+    #hero p{
+        font-size: .7rem   ;
+    }
+    
+}
+
+@media screen and (max-width : 768px){
+    #hero img{
+        width: 60%;
+    }
+    .social-icon{
+        left: 15%;
+        transform: translate(15%);
+    }
+    #hero .row{
+        padding-bottom: 100px;
+    }
+
+    #about p{
+        text-align: justify !important;
+    }
+}
+
+@media screen and (max-width : 576px){
+    
+}
+
+@media screen and (max-width : 350px ) {
+    
+}
